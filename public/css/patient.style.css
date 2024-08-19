@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+}
+:root{
+    --yellow:#f9d806;
+    --green:#007246;
+    --light-yellow:#ffee80;
+    --light-green:#8fff80;
+    --light-blue:#0f00b1;
+    --blue:#130f40;
+    --light-color:#666;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: #f0f0f044;
+}
+#button{
+    text-decoration: none;
+    color: white;
+}
+
+.logo_container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 12rem;
+    border: 1px solid #F7F7F8;
+    border-radius: 11px;
+}
+
+#sectionPatient{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#patient-form, #patients-list {
+    padding: 20px;
+}
+h2{
+    padding: 1rem;
+}
+
+form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+button:hover {
+    background-color: var(--light-blue);
+}
+.button-delete,.button-update{
+    margin: 0 0.3rem;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 670px) {
+    #sectionPatient{
+        display: grid;
+        grid-template-columns:  auto;
+    
+    }
+    #patient-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
